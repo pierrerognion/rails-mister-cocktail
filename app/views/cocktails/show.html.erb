@@ -25,7 +25,7 @@
           <tr>
             <td><%= dose.description %></td>
             <td><%= dose.ingredient.name %></td>
-            <td><%= link_to "Delete", delete_dose_path(dose),
+            <td><%= link_to "Delete", dose_path(dose),
               method: :delete,
               data: { confirm: "Are you sure?" } %> </td>
           </tr>
