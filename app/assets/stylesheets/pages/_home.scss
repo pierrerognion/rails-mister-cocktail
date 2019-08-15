@@ -1,1 +1,35 @@
 // Specific CSS for your home-page
+.parent { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-column-gap: 20px;
+  grid-row-gap: 20px; 
+  }
+
+  @media (max-width: 1000px) {
+    .parent { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-column-gap: 20px;
+      grid-row-gap: 20px; 
+      }
+  
+  }
+  
+  @media (max-width: 800px) {
+    .parent { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      grid-column-gap: 20px;
+      grid-row-gap: 20px; 
+      }
+  }
+  
+  @media (max-width: 500px) {
+    .parent { 
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-column-gap: 20px;
+      grid-row-gap: 20px; 
+      }
+  }
