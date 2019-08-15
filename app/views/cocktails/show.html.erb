@@ -9,7 +9,6 @@
     <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
     <br>
     <br>
-    <p><%= @cocktail.name %><p>
     
     <table>
       <thead>
@@ -24,8 +23,8 @@
       <tbody>
         <% @cocktail.doses.each do |dose| %>
           <tr>
-            <td><%= dose.content %></td>
-            <td><%= dose.rating %></td>
+            <td><%= dose.description %></td>
+            <td><%= dose.ingredient.name %></td>
           </tr>
         <% end %>
       </tbody>
